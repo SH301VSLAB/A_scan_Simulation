@@ -9,6 +9,6 @@
 
 ### 3. noise_ascan.txt contains A_scan without flaw.
 
-### 6. sdh_flaw_wo_noise.txt contains flaw signal simulated for flat bottom hole without grain and system noise.
+### 4. sdh_flaw_wo_noise.txt contains flaw signal simulated for flat bottom hole without grain and system noise.
 
 ### 5 sdh_flaw_w_noise.txt constains flaw signal simulated for Side Drilled Hole with grain and system noise added.
