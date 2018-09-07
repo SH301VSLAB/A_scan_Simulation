@@ -2,7 +2,7 @@ clear all;
 close all;
 clc;
 
-load('fb_flawd_wo_noise');
+load('sdh_flaw_wo_noise.txt');
 load('noise_time');
 
 
@@ -16,7 +16,7 @@ end
 fpn(i,:)=noise+tvt;
 end
 
-save('fbh_flaw_w_noise.txt','fpn');
+save('sdh_flaw_w_noise.txt','fpn');
 
 for i=1:size(fpn)
 figure;
