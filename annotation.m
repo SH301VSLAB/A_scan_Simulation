@@ -2,7 +2,12 @@ clear all;
 clc;
 close all;
 
-load('fb_flawd_wo_noise.txt');
+
+load('sdh_flaw_wo_noise.txt');
+fvt=circshift(fvt,100,2);
+
+load('sdh_flaw_w_noise.txt');
+fpn=circshift(fpn,100,2);
 
 ann=[];
 for i=1:size(fvt)(1)
@@ -22,4 +27,7 @@ clear temp_ann;
 end
 
 
-save('annotation_fbh.txt','ann');
+
+save('shifted_sdh_wo_noise.txt','fvt');
+save('shifted_sdh_w_noise.txt','fpn');
+save('annotation_sdh.txt','ann');
