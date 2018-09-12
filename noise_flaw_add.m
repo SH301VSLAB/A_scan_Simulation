@@ -8,7 +8,7 @@ load('noise_time');
 
 len_of_ascan=1024;
 fpn=[];
-for i=1:size(fvt)
+for i=1:size(fvt)(1)
 tvt=fvt(i,:);
 for j=1:len_of_ascan
 noise(j)=mean_tnf(j)+(std_tnf(j).*randn(1,1));
